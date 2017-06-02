@@ -1,11 +1,10 @@
-var $ = require('jquery');
-var template = require('../templates/mc.html');
+var services = require("../templates/services.html");
 module.exports = Backbone.View.extend({
 	initialize:function(){
 	},
+	template:services,
 	el:"#app",
-	template:template,
 	render:function(){
 		$(this.el).append(this.template);
 	}
-})
+});
