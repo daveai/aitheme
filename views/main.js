@@ -1,14 +1,3 @@
-require('../assets/css/style');
-require('../assets/css/responsive');
-require('owl.carousel/dist/assets/owl.carousel.css');
-require('bootstrap/dist/css/bootstrap.css');
-require('../assets/css/font-awesome.css');
-var $ = require('jquery');
-window.$ = $;
-global.jQuery = require('jquery');
-var _ = require('lodash');
-var Backbone = require('backbone');
-require('bootstrap');
 var header = require('./shared/header');
 var slider = require('./slider');
 var services = require('./services');
