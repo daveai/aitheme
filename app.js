@@ -19,8 +19,15 @@ var router = Backbone.Router.extend({
 	},
 
 	openHomeView: function() {
-		var MainView = require('./views/main');
-		new MainView().render();
+		var HomeView = require('./views/home');
+		new HomeView().render();
+
+		var model = Backbone.Model.extend({
+			urlRoot:'http://localhost:5000/books'
+		})
+
+		var book = new model({id:1});
+		book.fetch();
 	}
 });
 new router();
